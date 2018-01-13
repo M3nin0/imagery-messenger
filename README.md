@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
 
-Ferramenta para fazer o envio de imagens para API do facebook
+Bibioteca para fazer o envio de imagens para API do facebook
 
 ## Setup
 
@@ -74,7 +74,7 @@ img = Imagery(token, input_path)
 img.send_image()
 ```
 
-# ToDo
+## ToDo
 
 - :ballot_box_with_check: Envio de imagens
     - JPG;
