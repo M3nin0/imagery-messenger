@@ -10,13 +10,14 @@ if __name__ == '__main__':
                         help='Location where json with ids will be generated')
     parser.add_argument('--token', action='store', type=str,
                         help='Set the token that will be used')    
-    parser.add_argument('--config', action='store', type=str,
-                        help='')
 
     args = parser.parse_args()
 
     if not (args.token and args.input):
         print('As opções\n --token\n --input\nDevem estar preenchidas')
-    else: 
-        img = Imagery(args.token, args.input, args.output)
-        img.read_path()
+    else:
+        if args.output != None:
+            img = Imagery(args.token, args.input, args.output)
+        else:
+            img = Imagery(args.token, args.input)
+        img.send_image()
