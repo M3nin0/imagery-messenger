@@ -7,19 +7,32 @@ class Imagery(object):
     '''
     
 
-    def __init__(self, token):
+    def __init__(self, token, input_path, output_path = './'):
         self.token = token
+        self.input_path = input_path
+        self.output_path = output_path
     
 
-    def __read_path(self, input_path):
+    def read_path(self):
         '''
             Method that reads the images in the inserted directory
         
             :param input_path: str
-            :return void
+            :return list
         '''
+        
+        types = ['.jpg', '.png']
+        _images = []
 
-        pass
+        for _type in types:
+            temp = glob.glob(self.input_path + '/*' + _type)
+            
+            for image in temp:
+                _images.append(image)
+        
+        print(_images)
+
+        # return _images
 
 
     def __gen_json(self, output_path):
@@ -33,14 +46,14 @@ class Imagery(object):
         pass
 
 
-    def send_image(self, input_path):
+    def send_image(self):
         '''
             Upload images
 
             :param input_path: str
             :return void
         '''
-        
+
         pass
     
     

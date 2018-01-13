@@ -15,7 +15,8 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    if not (args.token and args.input and args.output):
-        print('As opções\n --token\n --input\n --output\nDevem estar preenchidas')
+    if not (args.token and args.input):
+        print('As opções\n --token\n --input\nDevem estar preenchidas')
     else: 
-        pass
+        img = Imagery(args.token, args.input, args.output)
+        img.read_path()
