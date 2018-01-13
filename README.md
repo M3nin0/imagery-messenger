@@ -1,4 +1,7 @@
-# imagery-messenger
+# Imagery Messenger :postbox:
+
+[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+
 
 Ferramenta para fazer o envio de imagens para API do facebook
 
@@ -70,3 +73,13 @@ img = Imagery(token, input_path)
 # Para enviar as imagens
 img.send_image()
 ```
+
+# ToDo
+
+- :ballot_box_with_check: Envio de imagens
+    - JPG;
+    - PNG;
+    - BMP;
+    - TIFF.
+
+- :black_square_button: Envio de vídeos
