@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
 
-Bibioteca para fazer o envio de imagens para API do facebook
+Biblioteca para fazer o envio de imagens para API do facebook
 
 ## Setup
 
